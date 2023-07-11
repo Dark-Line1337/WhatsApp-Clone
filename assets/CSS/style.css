@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #2b2a2aea;
+}
+
+html,body {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+/* Container */
+.container {
+    position: relative;
+    width: 95vw;
+    height: 95%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Container Aside */
+
+.container aside {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Aside .navbar */
+
+.container aside .navbar {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container aside .navbar .profile-logo img {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container aside .navbar .nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.container aside .navbar .nav ul li i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Serch Bar */
+
+.container aside .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 6%;
+    margin: 10px 0 0 5%;
+}
+
+.container aside .search input {
+    all: unset;
+    width: 85%;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: var(--main-bg-color);
+}
+
+.container aside .search i:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.container aside .search i:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.container aside .search p {
+    color: white;
+    position: absolute;
+    left: 30%;
+}
+
+.container aside .search i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Person Chat */
+
+.container aside .chats {
+    width: 100%;
+    height: 80%;
+    margin-top: 3%;
+    flex-direction: column;
+}
+
+.container aside .chats .person1 ,
+.container aside .chats .person2 ,
+.container aside .chats .person3 ,
+.container aside .chats .person4 ,
+.container aside .chats .person5 ,
+.container aside .chats .person6 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    background-color: #ddd3;
+    border-radius: 15px;
+}
+
+.container aside .chats .person1 .image img ,
+.container aside .chats .person2 .image img ,
+.container aside .chats .person3 .image img ,
+.container aside .chats .person4 .image img ,
+.container aside .chats .person5 .image img ,
+.container aside .chats .person6 .image img {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%; 
+}
+
+.container aside .chats .person1 .image img {
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.container aside .chats .person2 .image img {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+
+.container aside .chats .person3 .image img {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.container aside .chats .person4 .image img {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.container aside .chats .person5 .image img {
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.container aside .chats .person6 .image img {
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.container aside .chats .person2 .name-message {
+    margin-left: 10%;
+}
+
+.container aside .chats .person1 .name-message h1 ,
+.container aside .chats .person2 .name-message h1 ,
+.container aside .chats .person3 .name-message h1 ,
+.container aside .chats .person4 .name-message h1 ,
+.container aside .chats .person5 .name-message h1 ,
+.container aside .chats .person6 .name-message h1 {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container aside .chats .person3 .name-message {
+    margin-left: 12%;
+}
+
+.container aside .chats .person4 .name-message {
+    margin-left: 10%;
+}
+
+.container aside .chats .person5 .name-message {
+    margin-left: 5%;
+}
+
+.container aside .chats .person6 .name-message {
+    margin-left: 15%;
+}
+
+.container aside .chats .person2 .name-message h1 ,
+.container aside .chats .person6 .name-message h1 {
+    text-align: center;
+}
+
+.container aside .chats .person1 .name-message .message ,
+.container aside .chats .person2 .name-message .message ,
+.container aside .chats .person3 .name-message .message ,
+.container aside .chats .person4 .name-message .message ,
+.container aside .chats .person5 .name-message .message ,
+.container aside .chats .person6 .name-message .message {
+    display: flex;
+    flex-direction: row;
+}
+
+.container aside .chats .person1 .name-message .message i ,
+.container aside .chats .person2 .name-message .message i ,
+.container aside .chats .person3 .name-message .message i ,
+.container aside .chats .person4 .name-message .message i ,
+.container aside .chats .person5 .name-message .message i ,
+.container aside .chats .person6 .name-message .message i {
+    margin-top: 20px;
+    margin-right: 5px;
+    color: #34B7F1;
+}
+
+.container aside .chats .person1 .name-message .message p ,
+.container aside .chats .person2 .name-message .message p ,
+.container aside .chats .person3 .name-message .message p ,
+.container aside .chats .person4 .name-message .message p ,
+.container aside .chats .person5 .name-message .message p ,
+.container aside .chats .person6 .name-message .message p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #25D366;
+    margin-bottom: 5%;
+}
+
+.container aside .chats .person6 .name-message .message p {
+    font-size: 1.2em;
+}
+
+.container aside .chats .person1 .image::before
+{
+    content: "";
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    border-bottom: 2px solid #ffffff79;
+    top: 95%;
+}
+
+.container aside .chats .person2 .image::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    border-bottom: 2px solid #ffffff79;
+    top: 95%;
+}
+
+.container aside .chats .person3 .image::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    border-bottom: 2px solid #ffffff79;
+    top: 95%;
+}
+
+.container aside .chats .person4 .image::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    border-bottom: 2px solid #ffffff79;
+    top: 95%;
+}
+
+.container aside .chats .person5 .image::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    border-bottom: 2px solid #ffffff79;
+    top: 95%;
+}
+
+.container aside .chats .person6 .image::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    border-bottom: 2px solid #ffffff79;
+    top: 95%;
+}
+
+/* Container Main */
+
+.container main{
+    width: 60%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Footer */
+
+.container main footer {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container aside .footer {
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    background-color: #25D366;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container aside h1 span a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 1.3em;
+    transition: color .2s linear;
+}
+
+.container aside h1 span a:hover {
+    color: darkslateblue;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px){
+    .container aside .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container aside .navbar .nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container aside .navbar .nav ul li {
+        width: 20%;
+    }
+
+    .container aside .navbar .nav ul li i{
+        font-size: 30px;
+    }
+
+    .container aside .chats .person6 {
+        display: none;
+    }
+
+}
